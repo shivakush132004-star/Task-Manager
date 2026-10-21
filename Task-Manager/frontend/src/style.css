@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f3f5fb; color: #242b3a; }
+.page { min-height: 100vh; padding: 48px 16px; display: flex; justify-content: center; align-items: flex-start; }
+.card { width: 100%; max-width: 650px; padding: 32px; background: #fff; border: 1px solid #e9ecf4; border-radius: 18px; box-shadow: 0 14px 45px #1b2b4a12; }
+.eyebrow { margin: 0 0 8px; color: #5968cb; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 0; font-size: 32px; letter-spacing: -1px; }
+.subtitle { margin: 8px 0 22px; color: #788194; }
+.stats { display: flex; gap: 36px; margin-bottom: 25px; }
+.stats div { display: flex; flex-direction: column; gap: 4px; }
+.stats strong { font-size: 22px; }
+.stats span { color: #838b9a; font-size: 12px; }
+form { display: flex; gap: 10px; }
+form input { flex: 1; min-width: 0; padding: 13px; border: 1px solid #dce1ec; border-radius: 9px; font-size: 14px; outline: none; }
+form input:focus { border-color: #6674d2; box-shadow: 0 0 0 3px #eef0ff; }
+button { padding: 11px 15px; border: 0; border-radius: 9px; background: #5968cb; color: white; font-weight: 600; cursor: pointer; }
+button:hover { background: #4655b8; }
+h2 { margin: 28px 0 12px; font-size: 18px; }
+ul { list-style: none; margin: 0; padding: 0; }
+li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0; border-bottom: 1px solid #edf0f5; }
+li label { display: flex; align-items: center; gap: 10px; min-width: 0; overflow-wrap: anywhere; }
+li label input { accent-color: #5968cb; }
+.done span { color: #8c94a3; text-decoration: line-through; }
+.delete { padding: 8px 11px; color: #b33347; background: #fff0f1; }
+.delete:hover { background: #ffe1e4; }
+.empty { color: #858d9b; font-size: 14px; }
+.error { padding: 11px; border-radius: 8px; color: #a52828; background: #fff0ef; font-size: 13px; }
+footer { margin-top: 22px; padding-top: 16px; border-top: 1px solid #edf0f5; text-align: center; color: #9aa1ad; font-size: 11px; }
+@media (max-width: 480px) { .card { padding: 23px 18px; } form { flex-direction: column; } .stats { gap: 24px; } }
